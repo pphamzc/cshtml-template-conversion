@@ -1,0 +1,116 @@
+@using System.Data;
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+    * {
+        font-family: 'Times New Roman';
+    }
+
+    .HeaderMainDiv {
+        width: 100%;
+        font-size: small;
+        margin-top: 2%;
+		/*
+		border-style: dotted;
+		border-width: 1x;
+		border-color: red
+        letter-spacing: 1px;*/
+    }
+
+        .HeaderMainDiv > div {
+            display: inline-block;
+        }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    span {
+        display: block;
+        padding-right: 45px;
+    }
+
+    .vertical-align-top {
+        vertical-align: top;
+    }
+
+    .display-inline-block {
+        display: inline-block;
+    }
+
+    .padding-right {
+        padding-right: 5px;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: small;
+        width: 450px;
+    }
+
+        table td {
+            border: 2px solid #000;
+            padding-left: 3px;
+        }
+		
+	#header-table{
+		border-style: dotted;
+		border-width: 1x;
+		border-color: red
+	}	
+</style>
+<div class="HeaderMainDiv vertical-align-top">
+    <div class="font-bold vertical-align-top" style="padding-right:10px;margin-right:50px;">
+        <img src="http://www.zerochaos.com/PDF/PdfImages/zclogo.png" alt="logo" style="width:90px;height:90px;" />
+    </div>
+  
+       <div class="display-inline-block">
+            <div style="margin-top:2%;width:6%;font-weight:bold;" class="vertical-align-top display-inline-block">
+                Bill To:
+            </div>
+            <div style="margin-top: 2%; width: 25%; font-weight: bold;" class="display-inline-block">
+                <span>ShoreTel</span>
+                <span>960 Stewart Dr.</span>
+                <span>Sunnyvale, CA 94085</span>
+             
+            </div>
+            <div style="margin-top: 2%; width:8%; font-weight: bold;" class="vertical-align-top display-inline-block">
+                Remit To:
+            </div>
+            <div style="margin-top: 2%; width: 20%; font-weight: bold;" class="display-inline-block">
+                <span>ZeroChaos</span>
+                <span>PO Box 534305</span>
+                <span>Atlanta, GA 30353-4305</span>
+
+            </div>
+
+            <div class="vertical-align-top display-inline-block" style="margin-top:2%;width:35%;float:right;clear:right;">
+                <table style="width:100%;float:right;" >
+                    <tr>
+                        <td style="width: 250px;" class="font-bold">Invoice Number:</td>
+                        <td style="width:320px;">ZCCSHOR000004015</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">Invoice Date:</td>
+                        <td>04/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">Subtotal:</td>
+                        <td>USD 1709.40</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">Sales Tax:</td>
+                        <td>USD 0.00</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">Invoice Total:</td>
+                        <td>USD 1,709.40</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">Payment Terms:</td>
+                        <td>30</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+</div>

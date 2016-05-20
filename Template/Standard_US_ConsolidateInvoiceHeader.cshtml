@@ -1,0 +1,109 @@
+@using System.Data;
+@inherits Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+<style>
+    * {
+        font-family: 'Times New Roman';
+    }
+
+    .HeaderMainDiv {
+        width: 100%;
+        font-size: small;
+        margin-top: 2%;
+        /*letter-spacing: 1px;*/
+    }
+
+        .HeaderMainDiv > div {
+            display: inline-block;
+        }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    span {
+        display: block;
+        padding-right: 45px;
+    }
+
+    .vertical-align-top {
+        vertical-align: top;
+    }
+
+    .display-inline-block {
+        display: inline-block;
+    }
+
+    .padding-right {
+        padding-right: 5px;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: small;
+        width: 400px;
+    }
+
+        table td {
+            border: 2px solid #000;
+            padding-left: 3px;
+        }
+</style>
+<div class="HeaderMainDiv vertical-align-top">
+    <div class="font-bold vertical-align-top" style="padding-right:21px;">
+        <img src="@Model.ImagesFolderRootPath/zcLogo.png" alt="logo" style="width:90px;height:90px;" />
+    </div>
+    @if (Model.HeaderDetailsDataSet.Tables[0].Rows.Count > default(int))
+    {
+        var headeAddressRow = Model.HeaderDetailsDataSet.Tables[0].Rows[0];
+        var detailsDataRow = Model.BodyDetailsDataSet.Tables[0].Rows[0];
+        <div style="width:68%; margin-top:1%" class="font-bold vertical-align-top">
+            <div align="right" style="width:9%;" class="vertical-align-top display-inline-block padding-right">
+                Bill To:
+            </div>
+            <div class="display-inline-block ">
+                <span>@headeAddressRow["CustomerName"].ToString()</span>
+                <span>@headeAddressRow["DivisionName"].ToString()</span>
+                <span>@headeAddressRow["Address1"].ToString()</span>
+                <span>@headeAddressRow["Address2"].ToString()</span>
+                <span>@headeAddressRow["CityStateZip"].ToString()</span>
+            </div>
+            <div align="right" style="width:11%;" class="vertical-align-top display-inline-block padding-right">
+                Remit To:
+            </div>
+            <div class="display-inline-block vertical-align-top">
+                <span>@headeAddressRow["MSPName"].ToString()</span>
+                <span>@headeAddressRow["MSPAddress1"].ToString()</span>
+                <span>@headeAddressRow["MSPAddress2"].ToString()</span>
+                <span>@headeAddressRow["MSPCityStateZip"].ToString()</span>
+            </div>
+        </div>
+        <div style="width:21%;" class="vertical-align-top" align="right">
+            <table>
+                <tr>
+                    <td style="width:160px;" class="font-bold">Invoice Number:</td>
+                    <td style="width:340px;">@headeAddressRow["InvoiceNum"].ToString()</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Invoice Date:</td>
+                    <td>@detailsDataRow["InvoiceDate"].ToString()</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Subtotal:</td>
+                    <td>@detailsDataRow["InvoiceSubTotal"].ToString()</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Sales Tax:</td>
+                    <td>@detailsDataRow["TotalTax"].ToString()</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Invoice Total:</td>
+                    <td>@headeAddressRow["InvoiceTotal"].ToString()</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Payment Terms:</td>
+                    <td>@headeAddressRow["PaymentTerms"].ToString()</td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>

@@ -1,0 +1,142 @@
+@using System.Data;
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+    * {
+        font-family: 'Times New Roman';
+        font-size: 15px;
+    }
+
+    .right-align {
+        text-align: right;
+    }
+
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+
+        table thead th {
+            border: 2px solid black;
+        }
+
+        table tbody tr td {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            padding-left: 5px;
+            padding-right: 5px;
+            vertical-align: top;
+            font-size: small;
+        }
+
+        table tfoot tr td {
+            border-right: 2px solid #000;
+            border-left: 2px solid #000;
+            border-bottom: 2px solid #000;
+            border-top: none;
+            height: 100%;
+        }
+
+    div {
+        height: 100%;
+    }
+</style>
+<div>
+    <table style="height:100%;width:100%;">
+        <thead>
+            <tr style="height:30px">
+                <th style="width:15%;">
+                    <label>Name</label>
+                </th>
+                <th style="width:30%">
+                    <label>Description</label>
+                </th>
+                <th style="width:8%">
+                    <label>Approval Manager</label>
+                </th>
+                <th style="width:6%">
+                    <label>Approval Date</label>
+                </th>
+                <th style="width:6%">
+                    <label>PO #</label>
+                </th>
+                <th style="width:8%">
+                    <label>Alt PO #</label>
+                </th>
+                <th style="width:5%">
+                    <label>QTY</label>
+                </th>
+                <th style="width:5%">
+                    <label>UOM</label>
+                </th>
+                <th style="width:7%">
+                    <label>Rate</label>
+                </th>
+                <th style="width:10%">
+                    <label>Total</label>
+                </th>
+            </tr>
+        </thead>
+       <tbody>
+         
+                <tr style="height:50px">
+                    <td>
+                        Natal LIs Marie
+                    </td>
+                    <td>
+                        Regular Time: 3/28/2016 to 4/3/2016 [6607286]
+                    </td>
+                    <td>
+                        Jeff Wiessler
+                    </td>
+                    <td>
+                        04/01/2016
+                    </td>
+                    <td>
+                        32908 ZC WO 204552
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td class="right-align">
+                        40.00
+                    </td>
+                    <td>
+                        Hourly
+                    </td>
+                    <td class="right-align">
+                        26.40
+                    </td>
+                    <td class="right-align">
+                       $ 1,056.00
+                    </td>
+                </tr>
+    
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
