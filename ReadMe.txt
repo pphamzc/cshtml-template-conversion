@@ -15,7 +15,7 @@ Instructions
 First make sure all files are there.
 
 - The templates have three parts in Template directory : *Header.cshtml, *Body.cshtml, *Footer.cshtml.  
-- You have sample pdf names like your templates in Sample-Invoice-PDF directory : *Sample.pdf
+- You have sample pdf named like your templates in Sample-Invoice-PDF directory : *Sample.pdf
 - Test harness works by double clicking on InvoiceTemplateTestHarness.exe in Test-Harness directory.
 - You have *_TemplateOptions.txt matching your templates.
 
