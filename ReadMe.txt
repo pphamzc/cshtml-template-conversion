@@ -12,7 +12,7 @@ Go to the Test-Harness folder and double click on the file : InvoiceTemplateTest
 Instructions
 ------------
 
-First make sure all your files are there.
+First make sure all files are there.
 
 - The templates have three parts in Template directory : *Header.cshtml, *Body.cshtml, *Footer.cshtml.  
 - You have sample pdf names like your templates in Sample-Invoice-PDF directory : *Sample.pdf
