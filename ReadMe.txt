@@ -28,3 +28,9 @@ First make sure all files are there.
 6. Click on Create Invoice Button.
 7. Compare your generated PDF file to the sample pdf file in Sample-Invoice-PDF directory.
 9. Repeat as many times as necessary to match generated pdf to sample pdf in format.  Note content should hard code so you should not have to worry about that.  
+
+
+NOTE
+----
+
+Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the Jackson_Health_ConsolidateInvoice for this challenge.
