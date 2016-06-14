@@ -1,5 +1,5 @@
-@inherits
-Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+@using System.Data;
+@inherits Westwind.RazorHosting.RazorTemplateBase
 <style>
 * {
 	font-family: 'Times New Roman', Times, serif;
@@ -73,44 +73,41 @@ table td.right-align {
             </tr>
         </thead>
         <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
-                <tr>
+            <tr>
                     <td style="width:135px;">
-                        @row["Name"].ToString()
+                        Alebiousu Violet
                     </td>
                     <td style="width:270px;">
-                        @row["Description"].ToString()
+                        Adjustment-Regular Time Adjustment (05/04/2014 to 05/10/2014) [4338873]
                     </td>
                     <td style="width:100px;">
-                        @row["ApprovalManager"].ToString()
+                       
                     </td>
                     <td style="width:75px;">
-                        @row["ApprovalDate"].ToString()
+                        
                     </td>
                     <td style="width:75px;">
-                        @row["PONumber"].ToString()
+                    
                     </td>
                     <td style="width:75px;">
-                        @row["OrgLevelName"].ToString()
+                      Jackson Health System
                     </td>
                     <td style="width:45px;">
-                        @row["CostCenter"].ToString()
+                        
                     </td>
                     <td style="width:45px;">
-                        @row["Quantity"].ToString()
+                        -36.25
                     </td>
                     <td style="width:50px;">
-                        @row["Units"].ToString()
+                        Hourly
                     </td>
                     <td style="width:65px;">
-                        @row["Rate"].ToString()
+                        $ 69.73
                     </td>
                     <td style="width:75px;">
-                        @row["Total"].ToString()
+                        - $ 2,470.80
                     </td>
                 </tr>
-            }
         </tbody>
         <tfoot>
             <tr>

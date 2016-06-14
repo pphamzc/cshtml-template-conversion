@@ -1,5 +1,4 @@
-@inherits
-Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+@inherits Westwind.RazorHosting.RazorTemplateBase
 <style>
 * {
     font-family: 'Times New Roman', Times, serif;
@@ -49,13 +48,10 @@ table td {
 }
 </style>
 <div>
-    <div style="y:0;width:85px;x:0;height:85px;">
-        <img src="@Model.ImagesFolderRootPath/zcLogo.png" alt="logo" />
+      <div class="font-bold vertical-align-top" style="padding-right:10px;margin-right:50px;">
+        <img src="http://www.zerochaos.com/PDF/PdfImages/zclogo.png" alt="logo" style="width:90px;height:90px;" />
     </div>
-    @if (Model.HeaderDetailsDataSet.Tables[0].Rows.Count > default(int))
-    {
-        var headeAddressRow = Model.HeaderDetailsDataSet.Tables[0].Rows[0];
-        var detailsDataRow = Model.BodyDetailsDataSet.Tables[0].Rows[0];
+  
         <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;height:200px;font-weight:bold;font-size:10px;width:0;y:10;x:125;padding-right:0px;">
             <div style="padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
                 Bill To:
@@ -73,33 +69,32 @@ table td {
                 Atlanta, GA 30353-4305
             </div>
         </div>
-        <div style="font-family:TimesNewRoman;padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;font-weight:bold;font-size:10px;y:10;x:663;padding-right:0px;text-align:left;">
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;font-weight:bold;font-size:10px;y:10;padding-right:0px;text-align:left;">
             <table>
                 <tr>
                     <td style="width:125px;">Invoice Number:</td>
-                    <td style="width:225px;">@headeAddressRow["InvoiceNum"].ToString()</td>
+                    <td style="width:225px;">ZCCJACK000003424</td>
                 </tr>
                 <tr>
                     <td style="width:125px;">Invoice Date:</td>
-                    <td style="width:225px;">@headeAddressRow["InvoiceDate"].ToString()</td>
+                    <td style="width:225px;">09/23/2014</td>
                 </tr>
                 <tr>
                     <td style="width:125px;">Subtotal:</td>
-                    <td style="width:225px;">@headeAddressRow["InvoiceSubTotal"].ToString()</td>
+                    <td style="width:225px;">USD -2470.80</td>
                 </tr>
                 <tr>
                     <td style="width:125px;">Sales Tax:</td>
-                    <td style="width:225px;">@headeAddressRow["TotalTax"].ToString()</td>
+                    <td style="width:225px;">USD 0.00</td>
                 </tr>
                 <tr>
                     <td style="width:125px;">Invoice Total:</td>
-                    <td style="width:225px;">@headeAddressRow["InvoiceTotal"].ToString()</td>
+                    <td style="width:225px;">USD -2,470.80</td>
                 </tr>
                 <tr>
                     <td style="width:125px;">Payment Terms:</td>
-                    <td style="width:225px;">@headeAddressRow["PaymentTerms"].ToString()</td>
+                    <td style="width:225px;">45</td>
                 </tr>
             </table>
         </div>
-    }
 </div>
