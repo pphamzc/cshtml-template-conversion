@@ -1,5 +1,5 @@
 @using System.Data;
-@inherits Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+@inherits Westwind.RazorHosting.RazorTemplateBase
 <style>
     * {
         font-family: 'Times New Roman';
@@ -76,42 +76,41 @@
                 </th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
+       <tbody>
+         
                 <tr style="height:50px">
                     <td>
-                        @row["Name"].ToString()
+                        Natal LIs Marie
                     </td>
                     <td>
-                        @row["Description"].ToString()
+                        Regular Time: 3/28/2016 to 4/3/2016 [6607286]
                     </td>
                     <td>
-                        @row["ApprovalManager"].ToString()
+                        Jeff Wiessler
                     </td>
                     <td>
-                        @row["ApprovalDate"].ToString()
+                        04/01/2016
                     </td>
                     <td>
-                        @row["PONumber"].ToString()
+                        32908 ZC WO 204552
                     </td>
                     <td>
-                        @row["AltPONum"].ToString()
+                        
                     </td>
                     <td class="right-align">
-                        @row["Quantity"].ToString()
+                        40.00
                     </td>
                     <td>
-                        @row["Units"].ToString()
+                        Hourly
                     </td>
                     <td class="right-align">
-                        @row["Rate"].ToString()
+                        26.40
                     </td>
                     <td class="right-align">
-                        @row["Total"].ToString()
+                       $ 1,056.00
                     </td>
                 </tr>
-            }
+    
             <tr>
                 <td></td>
                 <td></td>
