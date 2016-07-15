@@ -27,10 +27,18 @@ First make sure all files are there.
 5. Set the output directory and name of pdf file.
 6. Click on Create Invoice Button.
 7. Compare your generated PDF file to the sample pdf file in Sample-Invoice-PDF directory.
-9. Repeat as many times as necessary to match generated pdf to sample pdf in format.  Note content should hard code so you should not have to worry about that.  
+9. Repeat as many times as necessary to match generated pdf to sample pdf in format.  Note content are hard coded so you should not have to worry about that.  
 
 
 NOTE
 ----
 
-Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the Jackson_Health_ConsolidateInvoice for this challenge.
+Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates : 
+
+Madeo_Sweden_SEK_ConsolidateInvoice
+Madeo_Sweden_EUR_ConsolidateInvoice
+Madeo_Polish_ConsolidateInvoice
+Madeo_finland_ConsolidateInvoice
+Madeo_Atos_IT_ConsolidateInvoice
+
+for this challenge.
