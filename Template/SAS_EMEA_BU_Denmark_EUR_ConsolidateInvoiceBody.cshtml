@@ -1,0 +1,257 @@
+@inherits
+Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+<style>
+* {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+	border-right: 1px solid #000;
+	border-collapse: collapse;
+	font-size: 80%;
+}
+
+table th {
+	border: 1px solid #000;
+	border-bottom-width: 2px;
+}
+
+table tfoot th {
+	border: none !important;
+	border-bottom: 1px solid #000 !important;
+}
+
+table td {
+	border-left: 1px solid #000;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+table td.right-align {
+	text-align: right;
+	padding-right: 5px;
+}
+</style>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:250px;">
+                    <label>Description</label>
+                </th>
+                <th style="width:118px;">
+                    <label>Units</label>
+                </th>
+                <th style="width:135px;">
+                    <label>Unit Price</label>
+                </th>
+                <th style="width:135px;">
+                    <label>Total</label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:250px;">
+                    </td>
+                    <td style="width:118px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:250px;">
+                    <label>Description</label>
+                </th>
+                <th style="width:118px;">
+                    <label>Units</label>
+                </th>
+                <th style="width:135px;">
+                    <label>Unit Price</label>
+                </th>
+                <th style="width:135px;">
+                    <label>Total</label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:250px;">
+                        @row["Description"].ToString()
+                    </td>
+                    <td style="width:118px;">
+                        @row["Quantity"].ToString()
+                    </td>
+                    <td style="width:135px;">
+                        @row["Rate"].ToString()
+                    </td>
+                    <td style="width:135px;">
+                        @row["Total"].ToString()
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:638px;">
+                        @row["OrgLeveUserDef01"].ToString()
+                    </td>
+                    <td style="width:2px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:250px;">
+                        Net
+                    </td>
+                    <td style="width:118px;">
+                        VAT %
+                    </td>
+                    <td style="width:135px;">
+                        VAT Amt
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:250px;">
+                        @row["invoicesubtotal"].ToString()
+                    </td>
+                    <td style="width:118px;">
+                        @row["CalculatedTaxPercentage"].ToString()
+                    </td>
+                    <td style="width:135px;">
+                        @row["TotalTax"].ToString()
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:250px;">
+                    </td>
+                    <td style="width:118px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:165px;font-weight:bold;font-size:12px;">
+                        To Pay
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:165px;font-weight:regular;">
+                        @row["TotalInvoice"].ToString()
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:165px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:250px;">
+                        @row["ProjName;OrgLevel"].ToString()
+                    </td>
+                    <td style="width:118px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody>
+            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
+            {
+                <tr>
+                    <td style="width:250px;">
+                        @row["ProjUDF6"].ToString()
+                    </td>
+                    <td style="width:118px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                    <td style="width:135px;">
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

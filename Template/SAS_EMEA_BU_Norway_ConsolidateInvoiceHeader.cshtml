@@ -1,0 +1,115 @@
+@inherits
+Westwind.RazorHosting.RazorTemplateBase<ZeroChaos.Business.Entities.InvoicePdfGenerationDetails>
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:10;width:198px;x:10;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
+    </div>
+    @if (Model.HeaderDetailsDataSet.Tables[0].Rows.Count > default(int))
+    {
+        var headeAddressRow = Model.HeaderDetailsDataSet.Tables[0].Rows[0];
+        var detailsDataRow = Model.BodyDetailsDataSet.Tables[0].Rows[0];
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:6;x:345;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                Invoice
+            </div>
+            <div style="font-family:TimesNewRoman;padding-bottom:0px;font-size:10px;padding-top:0px;font-weight:regular;">
+                Invoice No
+                <span>@headeAddressRow["ConsolidatedInvoiceNum"].ToString()</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:63;x:535;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;">Invoice Date</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;">@headeAddressRow["InvoiceDate"].ToString()</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Delivery Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDLocationName_Del"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDAddress1_Del"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDAddress2_Del"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDZipCityState_Del"].ToString()</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Invoice Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDLocationName"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDAddress1"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDAddress2"].ToString()</td>
+                    <td style="width:400px;height:80px;">@headeAddressRow["MDZipCityState"].ToString()</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Checker</td>
+                    <td style="width:197px;">@headeAddressRow["ProjUDF2"].ToString()</td>
+                    <td style="width:160px;">Our Reference</td>
+                    <td style="width:155px;">@headeAddressRow["MSPProgramManagerName"].ToString()</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">PO Number</td>
+                    <td style="width:197px;">@headeAddressRow["ProjUDF5"].ToString()</td>
+                    <td style="width:160px;">Our Order No</td>
+                    <td style="width:155px;">@headeAddressRow["ProjUDF3"].ToString()</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Customer VAT-No</td>
+                    <td style="width:197px;">@headeAddressRow["CustVat"].ToString()</td>
+                    <td style="width:160px;">Terms of Payment</td>
+                    <td style="width:155px;">@headeAddressRow["SwedishPaymentTerms"].ToString()</td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>
