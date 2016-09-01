@@ -33,12 +33,10 @@ First make sure all files are there.
 NOTE
 ----
 
-Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates : 
+Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-Madeo_Sweden_SEK_ConsolidateInvoice
-Madeo_Sweden_EUR_ConsolidateInvoice
-Madeo_Polish_ConsolidateInvoice
-Madeo_finland_ConsolidateInvoice
-Madeo_Atos_IT_ConsolidateInvoice
-
-for this challenge.
+SAS_EMEA_BU_Sweden_ConsolidateInvoice
+SAS_EMEA_BU_Norway_ConsolidateInvoice
+SAS_EMEA_BU_Denmark_EUR_ConsolidateInvoice
+SAS_EMEA_BU_Denmark_ConsolidateInvoice
+PayWiseConsolidated_ConsolidateInvoice
