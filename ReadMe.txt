@@ -1,7 +1,7 @@
 Objective
 ---------
 
-Modify the templates (cshtml files) in template directory to match the sample pdf file as closely as possible in Sample-Invoice-PDF directory after conversion process.  You will use a test harness written .NET 4.5 to convert, test your changes and compare the pdf generated with the sample pdf located in Sample-Invoice-PDF directory.
+Modify the templates (cshtml files) in template directory to match the sample pdf in Sample-Invoice-PDF directory after conversion process.  You will use a test harness written .NET 4.5 to convert, test your changes and compare the pdf generated with the sample pdf located in Sample-Invoice-PDF directory.
 
 
 Tools
