@@ -1,0 +1,857 @@
+@using System.Data;
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+	border-right: 1px solid #000;
+	border-collapse: collapse;
+	font-size: 80%;
+}
+
+table th {
+	border: 1px solid #000;
+	border-bottom-width: 2px;
+}
+
+table tfoot th {
+	border: none !important;
+	border-bottom: 1px solid #000 !important;
+}
+
+table td {
+	border-left: 1px solid #000;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+table td.right-align {
+	text-align: right;
+	padding-right: 5px;
+}
+</style>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:225px;">
+                    <label>Description</label>
+                </th>
+                <th style="width:75px;">
+                    <label>Timesheet/ Exp ID</label>
+                </th>
+                <th style="width:75px;">
+                    <label>Last Name</label>
+                </th>
+                <th style="width:75px;">
+                    <label>First Name</label>
+                </th>
+                <th style="width:90px;">
+                    <label>PO</label>
+                </th>
+                <th style="width:70px;">
+                    <label>Timesheet End / Exp Date</label>
+                </th>
+                <th style="width:70px;">
+                    <label>Pay Type</label>
+                </th>
+                <th style="width:75px;">
+                    <label>Bill Rate</label>
+                </th>
+                <th style="width:60px;">
+                    <label>Hours</label>
+                </th>
+                <th style="width:70px;">
+                    <label>Tax</label>
+                </th>
+                <th style="width:90px;">
+                    <label>Bill Amt</label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			
+                <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1194296
+                    </td>
+                    <td style="width:75px;">
+                        Bartsch
+                    </td>
+                    <td style="width:75px;">
+                        Stephanie
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 36.90
+                    </td>
+                    <td style="width:60px;">
+                        22.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $811.80
+                    </td>
+                </tr>
+              <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1194298
+                    </td>
+                    <td style="width:75px;">
+                        Durkin
+                    </td>
+                    <td style="width:75px;">
+                        Charles
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 27.06
+                    </td>
+                    <td style="width:60px;">
+                        0.75
+                    </td>
+                    <td style="width:70px;">
+                        $1.32
+                    </td>
+                    <td style="width:90px;">
+                       $21.62
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       1194296
+                    </td>
+                    <td style="width:75px;">
+                        Durkin
+                    </td>
+                    <td style="width:75px;">
+                        Charles
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                      09/14/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 2.96
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                       $2.96
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 08/30/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191049
+                    </td>
+                    <td style="width:75px;">
+                        Flores
+                    </td>
+                    <td style="width:75px;">
+                        Dolores
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       08/30/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 22.14
+                    </td>
+                    <td style="width:60px;">
+                        30.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $664.20
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191134
+                    </td>
+                    <td style="width:75px;">
+                        Johannesen
+                    </td>
+                    <td style="width:75px;">
+                        Birthe
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 34.44
+                    </td>
+                    <td style="width:60px;">
+                       6.25
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                       $215.25
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144495
+                    </td>
+                    <td style="width:75px;">
+                        Johannesen
+                    </td>
+                    <td style="width:75px;">
+                        Birthe
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 24.00
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                       $24.00
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL
+                    </td>
+                    <td style="width:75px;">
+                       144496
+                    </td>
+                    <td style="width:75px;">
+                        Johannesen
+                    </td>
+                    <td style="width:75px;">
+                        Birthe
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                      09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 20.10
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $20.10
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144809
+                    </td>
+                    <td style="width:75px;">
+                        Johannesen
+                    </td>
+                    <td style="width:75px;">
+                        Birthe
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/14/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 50.00
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $50.00
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191550
+                    </td>
+                    <td style="width:75px;">
+                        Perry
+                    </td>
+                    <td style="width:75px;">
+                        Frances
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 28.29
+                    </td>
+                    <td style="width:60px;">
+                        24.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $678.96
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144552
+                    </td>
+                    <td style="width:75px;">
+                        Perry
+                    </td>
+                    <td style="width:75px;">
+                        Frances
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 55.80
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $55.80
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191646
+                    </td>
+                    <td style="width:75px;">
+                        Reiser
+                    </td>
+                    <td style="width:75px;">
+                        Rebecca
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 27.68
+                    </td>
+                    <td style="width:60px;">
+                        24.00
+                    </td>
+                    <td style="width:70px;">
+                        $46.50
+                    </td>
+                    <td style="width:90px;">
+                        $710.82
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144563
+                    </td>
+                    <td style="width:75px;">
+                        Reiser
+                    </td>
+                    <td style="width:75px;">
+                        Rebecca
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 62.90
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $62.90
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191734
+                    </td>
+                    <td style="width:75px;">
+                        Robbins Gregersen
+                    </td>
+                    <td style="width:75px;">
+                        Diane
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 34.44
+                    </td>
+                    <td style="width:60px;">
+                        8.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $275.52
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144568
+                    </td>
+                    <td style="width:75px;">
+                        Robbins Gregersen
+                    </td>
+                    <td style="width:75px;">
+                        Diane
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 23.04
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $23.04
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191633
+                    </td>
+                    <td style="width:75px;">
+                        Rosen
+                    </td>
+                    <td style="width:75px;">
+                        Deborah
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                       $ 34.44
+                    </td>
+                    <td style="width:60px;">
+                        30.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $1033.20
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144558
+                    </td>
+                    <td style="width:75px;">
+                        Rosen
+                    </td>
+                    <td style="width:75px;">
+                        Deborah
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 27.00
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $27.00
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1189883
+                    </td>
+                    <td style="width:75px;">
+                        Solodky
+                    </td>
+                    <td style="width:75px;">
+                        Dilys
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 18.45
+                    </td>
+                    <td style="width:60px;">
+                        13.00
+                    </td>
+                    <td style="width:70px;">
+                        $14.39
+                    </td>
+                    <td style="width:90px;">
+                        $254.24
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191798
+                    </td>
+                    <td style="width:75px;">
+                        Stilwell
+                    </td>
+                    <td style="width:75px;">
+                        Jennifer
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 34.44
+                    </td>
+                    <td style="width:60px;">
+                        31.50
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $1084.86
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1192249
+                    </td>
+                    <td style="width:75px;">
+                        Thurston
+                    </td>
+                    <td style="width:75px;">
+                        Caryn
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 18.45
+                    </td>
+                    <td style="width:60px;">
+                        6.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $110.70
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144719
+                    </td>
+                    <td style="width:75px;">
+                        Thurston
+                    </td>
+                    <td style="width:75px;">
+                        Caryn
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/14/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                        $ 18.00
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $18.00
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 09/13/2009
+                    </td>
+                    <td style="width:75px;">
+                       1191647
+                    </td>
+                    <td style="width:75px;">
+                        Torney
+                    </td>
+                    <td style="width:75px;">
+                        Maureen
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                       09/13/2009
+                    </td>
+                    <td style="width:70px;">
+                        Regular
+                    </td>
+                    <td style="width:75px;">
+                        $ 27.06
+                    </td>
+                    <td style="width:60px;">
+                        30.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $811.80
+                    </td>
+                </tr>
+				  <tr>
+                    <td style="width:225px;">
+                       REFERRAL-CLERICAL 
+                    </td>
+                    <td style="width:75px;">
+                       144564
+                    </td>
+                    <td style="width:75px;">
+                        Torney
+                    </td>
+                    <td style="width:75px;">
+                        Maureen
+                    </td>
+                    <td style="width:90px;">
+                        
+                    </td>
+                    <td style="width:70px;">
+                      09/11/2009
+                    </td>
+                    <td style="width:70px;">
+                        Expense
+                    </td>
+                    <td style="width:75px;">
+                       $ 145.60
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:70px;">
+                        
+                    </td>
+                    <td style="width:90px;">
+                        $145.60
+                    </td>
+                </tr>
+				  
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

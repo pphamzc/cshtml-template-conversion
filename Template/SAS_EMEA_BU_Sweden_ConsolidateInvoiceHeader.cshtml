@@ -1,3 +1,4 @@
+@using System.Data;
 @inherits Westwind.RazorHosting.RazorTemplateBase
 <style>
 * {
@@ -49,15 +50,16 @@ table td {
 </style>
 <div>
     <div style="y:45;width:198px;x:0;height:80px;">
-        <img src="http://www.zerochaos.com/PDF/PdfImages/zclogo.png" alt="logo" style="width:90px;height:90px;" />
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
     </div>
-         <div style="height:45px;vertical-align:top;height:50px;width:0;y:42;x:315;text-align:left;">
+    
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:42;x:315;text-align:left;">
             <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
                 <span>Faktura</span>
             </div>
             <div style="font-family:TimesNewRoman;padding-bottom:0px;font-size:10px;padding-top:0px;font-weight:regular;">
                 Fakt Nr
-                <span>ZCCINTP000000009</span>
+                <span>ZCCAUDI000000016</span>
             </div>
         </div>
         <div style="vertical-align:middle;height:200px;width:0;y:90;x:500;text-align:left;">
@@ -66,57 +68,57 @@ table td {
                     <td style="width:160px;">Fakturadatum</td>
                 </tr>
                 <tr>
-                    <td style="width:160px;">2013-06-30</td>
+                    <td style="width:160px;">2015-01-07</td>
                 </tr>
                 <tr>
                     <td style="width:400px;">Leveransadress</td>
                 </tr>
                 <tr>
-                    <td style="width:400px;height:80px;">International Paper Polska Sp. z o. o.</td>
-                    <td style="width:400px;height:80px;">Lubicz 23</td>
-                    <td style="width:400px;height:80px;"></td>
-                    <td style="width:400px;height:80px;">31-503 Kraków, PL</td>
+                    <td style="width:400px;height:80px;">1</td>
+                    <td style="width:400px;height:80px;">1 Washington Park</td>
+                    <td style="width:400px;height:80px;">16th Floor</td>
+                    <td style="width:400px;height:80px;">07102 Newark, NJ</td>
                 </tr>
                 <tr>
                     <td style="width:400px;">Fakturaadress</td>
                 </tr>
                 <tr>
-                    <td style="width:400px;height:80px;">International Paper Polska Sp. z o. o.</td>
-                    <td style="width:400px;height:80px;">Lubicz 23</td>
-                    <td style="width:400px;height:80px;"></td>
-                    <td style="width:400px;height:80px;">31-503 Kraków, PL</td>
+                         <td style="width:400px;height:80px;">1</td>
+                    <td style="width:400px;height:80px;">1 Washington Park</td>
+                    <td style="width:400px;height:80px;">16th Floor</td>
+                    <td style="width:400px;height:80px;">07102 Newark, NJ</td>
                 </tr>
                 <tr>
-                    <td style="width:125px;">Er referens</td>
-                    <td style="width:197px;"></td>
-                    <td style="width:160px;">Vår referens</td>
-                    <td style="width:155px;">Adam Youssef</td>
+                    <td style="width:80px;">Er Referens</td>
+                    <td style="width:242px;">Product</td>
+                    <td style="width:160px;">Vår Referens</td>
+                    <td style="width:155px;">Rebecca Shive</td>
                 </tr>
                 <tr>
-                    <td style="width:125px;">Ert ordernr</td>
-                    <td style="width:197px;"></td>
-                    <td style="width:160px;">Vårt Order.Nr</td>
+                    <td style="width:80px;">Ert Order nr.</td>
+                    <td style="width:242px;"></td>
+                    <td style="width:160px;">Vårt Order Nr.</td>
                     <td style="width:155px;"></td>
                 </tr>
                 <tr>
-                    <td style="width:125px;">Leveransvillkor</td>
-                    <td style="width:197px;"> </td>
+                    <td style="width:80px;">Momsreg nr.</td>
+                    <td style="width:242px;"></td>
                     <td style="width:160px;">Betalningsvillkor</td>
-                    <td style="width:155px;">14 dagar</td>
+                    <td style="width:155px;">30 päivää</td>
                 </tr>
-                <tr>
-                    <td style="width:125px;">Leveranssätt</td>
-                    <td style="width:197px;"> </td>
+				 <tr>
+                    <td style="width:80px;"></td>
+                    <td style="width:242px;"></td>
                     <td style="width:160px;">Förfallodatum</td>
-                    <td style="width:155px;">2013-07-14</td>
+                    <td style="width:155px;">2015-02-06</td>
                 </tr>
-				  <tr>
-                    <td style="width:125px;"></td>
-                    <td style="width:197px;"> </td>
+				 <tr>
+                    <td style="width:80px;"></td>
+                    <td style="width:242px;"></td>
                     <td style="width:160px;">Dröjsmålsränta</td>
                     <td style="width:155px;">9.50 %</td>
                 </tr>
             </table>
         </div>
-
+    
 </div>

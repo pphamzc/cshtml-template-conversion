@@ -1,0 +1,98 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:0;width:85px;x:0;height:85px;">
+        <img src="@Model.ImagesFolderRootPath/zcLogo.png" alt="logo" />
+    </div>
+          <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;height:200px;font-weight:bold;font-size:9px;width:0;y:15;x:300;padding-right:0px;">
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
+                Remit To:
+            </div>
+            <div style="font-family:Helvetica;padding-bottom:0px;vertical-align:top;padding-left:2px;padding-top:0px;font-weight:regular;font-size:8px;width:0;padding-right:0px;text-align:left;">
+                <span>ZeroChaos</span>
+                <span>PO Box 534305</span>
+                <span></span>
+                <span>Atlanta, GA 30353-4305</span>
+            </div>
+            <div>
+                For billing inquiries contact
+            </div>
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;font-weight:underline;bold;color:blue;padding-right:0px;text-align:left;">
+                invoicing@zerochaos.com
+            </div>
+        </div>
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;height:200px;font-weight:bold;font-size:9px;width:0;y:120;x:0;padding-right:0px;">
+            <table>
+                <tr>
+                    <td style="width:40px;">Bill To:</td>
+                    <td style="width:265px;">Mylan Pharmaceuticals Inc</td>
+                    <td style="width:265px;">781 Chestnut Ridge Road</td>
+                    <td style="width:265px;">PO Box 4310</td>
+                    <td style="width:265px;">Morgantown, WV 26505</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice #:</td>
+                    <td style="width:192px;">CWACMYLAN429680</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Date:</td>
+                    <td style="width:192px;">16 Sep 2009</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Amount:</td>
+                    <td style="width:192px;">$ 7,102.37</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Payment Terms:</td>
+                    <td style="width:192px;">30</td>
+                </tr>
+            </table>
+        </div>
+</div>
