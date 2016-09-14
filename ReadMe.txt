@@ -33,7 +33,7 @@ First make sure all files are there.
 NOTE
 ----
 
-Standard_US_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
+Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
 SAS_EMEA_BU_Sweden_DKK_ConsolidateInvoice
 SAS_EMEA_BU_Sweden_NOK_ConsolidateInvoice
