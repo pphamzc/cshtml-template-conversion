@@ -1,0 +1,122 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:45;width:198px;x:0;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
+    </div>
+ 
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:32;x:325;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                <span>Faktura</span>
+            </div>
+            <div style="font-family:TimesNewRoman;padding-bottom:0px;font-size:10px;padding-top:0px;font-weight:regular;">
+                Fakt Nr
+                <span>ZCCAUDI000000016</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:90;x:500;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;">Fakturadatum</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;">2015-01-07</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Leveransadress</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">1</td>
+                    <td style="width:400px;height:80px;">1 Washington Park</td>
+                    <td style="width:400px;height:80px;">16th Floor</td>
+                    <td style="width:400px;height:80px;">07102 Newark, NJ</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Fakturaadress</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">1</td>
+                    <td style="width:400px;height:80px;">1 Washington Park</td>
+                    <td style="width:400px;height:80px;">16th Floor</td>
+                    <td style="width:400px;height:80px;">07102 Newark, NJ</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Er Referens</td>
+                    <td style="width:197px;">Product</td>
+                    <td style="width:160px;">Vår Referens</td>
+                    <td style="width:155px;">Rebecca Shive</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Ert Order nr.</td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Vårt Order Nr.</td>
+                    <td style="width:155px;">5/12/2014</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Momsreg nr.</td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Betalningsvillkor</td>
+                    <td style="width:155px;">30 dagar</td>
+                </tr>
+				   <tr>
+                    <td style="width:125px;"></td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Förfallodatum</td>
+                    <td style="width:155px;">2015-02-06</td>
+                </tr>
+				   <tr>
+                    <td style="width:125px;"></td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Dröjsmålsränta</td>
+                    <td style="width:155px;">9.50 %</td>
+                </tr>
+            </table>
+        </div>
+</div>
