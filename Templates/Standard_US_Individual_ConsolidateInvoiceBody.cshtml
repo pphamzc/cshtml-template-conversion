@@ -1,0 +1,108 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+	border-right: 1px solid #000;
+	border-collapse: collapse;
+	font-size: 80%;
+}
+
+table th {
+	border: 1px solid #000;
+	border-bottom-width: 2px;
+}
+
+table tfoot th {
+	border: none !important;
+	border-bottom: 1px solid #000 !important;
+}
+
+table td {
+	border-left: 1px solid #000;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+table td.right-align {
+	text-align: right;
+	padding-right: 5px;
+}
+</style>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:100px;">
+                    <label>Name</label>
+                </th>
+                <th style="width:350px;">
+                    <label>Description</label>
+                </th>
+                <th style="width:100px;">
+                    <label>Approval Manager</label>
+                </th>
+                <th style="width:70px;">
+                    <label>Approval Date</label>
+                </th>
+                <th style="width:80px;">
+                    <label>PO #</label>
+                </th>
+                <th style="width:60px;">
+                    <label>QTY</label>
+                </th>
+                <th style="width:60px;">
+                    <label>UOM</label>
+                </th>
+                <th style="width:70px;">
+                    <label>Rate</label>
+                </th>
+                <th style="width:85px;">
+                    <label>Total</label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+          
+                <tr>
+                    <td style="width:100px;height:30px;">
+                        Turner Ryan
+                    </td>
+                    <td style="width:350px;">
+                        Overtime Time WC Adjustment
+                    </td>
+                    <td style="width:100px;">
+                       
+                    </td>
+                    <td style="width:70px;">
+                       
+                    </td>
+                    <td style="width:80px;">
+                        
+                    </td>
+                    <td style="width:60px;">
+                        1.00
+                    </td>
+                    <td style="width:60px;">
+                        Hourly
+                    </td>
+                    <td style="width:70px;">
+                        $-11.60
+                    </td>
+                    <td style="width:85px;">
+                       $-11.60
+                    </td>
+                </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="10">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

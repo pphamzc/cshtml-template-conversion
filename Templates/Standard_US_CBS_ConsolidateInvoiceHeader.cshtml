@@ -1,0 +1,104 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:0;width:85px;x:0;height:85px;">
+        <img src="@Model.ImagesFolderRootPath/zcLogo.png" alt="logo" />
+    </div>
+       
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;height:200px;font-weight:bold;font-size:10px;width:0;y:10;x:125;padding-right:0px;">
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
+                Bill To:
+            </div>
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:2px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
+                <span>Audible, Inc</span>
+                <span></span>
+                <span>1 Washington Park</span>
+                <span>16th Floor</span>
+                <span>Newark, NJ 07102</span>
+            </div>
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
+                Remit To:
+            </div>
+            <div style="padding-bottom:0px;vertical-align:top;padding-left:2px;padding-top:0px;width:0;padding-right:0px;text-align:left;">
+                <span>Visionary Technology Consultants</span>
+                <span>8161 Maple Lawn Blvd, Suite 430</span>
+                <span></span>
+                <span>Fulton, MD 20759</span>
+            </div>
+        </div>
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;vertical-align:top;padding-left:0px;padding-top:0px;font-weight:bold;font-size:10px;y:10;x:688;padding-right:0px;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:125px;">Invoice Number:</td>
+                    <td style="width:200px;">ZCCAUDI000000016</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Date:</td>
+                    <td style="width:200px;">01/08/2015</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Subtotal:</td>
+                    <td style="width:200px;">USD 161706.51</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Sales Tax:</td>
+                    <td style="width:200px;">USD 0.00</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Total:</td>
+                    <td style="width:200px;">USD 161,706.51</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Payment Terms:</td>
+                    <td style="width:200px;">USD 161,706.51</td>
+                </tr>
+            </table>
+        </div>
+</div>
