@@ -35,8 +35,8 @@ NOTE
 
 Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-Standard_US_Bloomberg_ConsolidateInvoice
-Standard_US_CBS_ConsolidateInvoice
-Standard_US_GoPro_ConsolidateInvoice
-Standard_US_GSK_MW_ConsolidateInvoice
-Standard_US_ConsolidateInvoice
+Standard_US_JM_Family_CBS_ConsolidateInvoice
+Standard_US_JM_Family_ConsolidateInvoice
+Standard_US_Nestle_Purina_ConsolidateInvoice
+Standard_US_WFL_ACA_ConsolidateInvoice
+Standard_US_WFL_ConsolidateInvoice
