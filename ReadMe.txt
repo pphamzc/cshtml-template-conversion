@@ -35,8 +35,13 @@ NOTE
 
 Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-Standard_US_JM_Family_CBS_ConsolidateInvoice
-Standard_US_JM_Family_ConsolidateInvoice
-Standard_US_Nestle_Purina_ConsolidateInvoice
-Standard_US_WFL_ACA_ConsolidateInvoice
-Standard_US_WFL_ConsolidateInvoice
+Madeo_Atos_IT_ConsolidateInvoice
+SAS_EMEA_BU_Denmark_ConsolidateInvoice
+SunocoInvoiceTemplate_Dev_ConsolidateInvoice
+WFL_Standard_Non_Consolidated_ConsolidateInvoice
+Win_HeaderInvoiceTemplate_AND_Win_MultiClientL_ConsolidateInvoice*
+
+NOTE ALSO:
+---------
+* For the Sample-Invoice-PDF Win_HeaderInvoiceTemplate_AND_Win_MultiClient.pdf, IGNORE THE SECOND PAGE.
+
