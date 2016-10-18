@@ -1,0 +1,102 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:0;x:0;width:85px;height:85px;">
+        <img src="@Model.ImagesFolderRootPath/zcLogo.png" alt="logo" />
+    </div>
+
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;width:0;y:150;padding-right:0px;">
+            <div style="font-weight:bold;italic;vertical-align:top;padding-left:0px;padding-top:0px;padding-bottom:0px;font-size:11px;width:0;padding-right:0px;text-align:left;">
+                World Information Network
+            </div>
+            <div>
+                Remit To:
+                <span>ZeroChaos</span>
+                <span></span>
+                <span>PO Box 534305</span>
+                <span>Atlanta, GA 30353-4305</span>
+            </div>
+        </div>
+        <div style="font-family:TimesNewRoman;padding-bottom:0px;padding-left:0px;padding-top:0px;width:0;y:85;x:214;padding-right:0px;">
+            <table>
+                <tr>
+                    <td style="width:200px;">essaccounting@zerochaos.com</td>
+                </tr>
+                <tr>
+                    <td style="width:200px;">www.zerochaos.com</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Number :</td>
+                    <td style="width:224px;">ZCCWIN000000651</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Date :</td>
+                    <td style="width:224px;">30 Jun 2014</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Payment Terms :</td>
+                    <td style="width:224px;">30</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Total :</td>
+                    <td style="width:224px;">$ 70.00</td>
+                </tr>
+                <tr>
+                    <td style="width:200px;">Bill To:</td>
+                </tr>
+                <tr>
+                    <td style="width:200px;">International Telecom</td>
+                    <td style="width:200px;">Attn: Amy Burnett</td>
+                    <td style="width:200px;">417 2nd Ave West</td>
+                    <td style="width:200px;">Seattle, WA 98118</td>
+                </tr>
+            </table>
+        </div>
+</div>
