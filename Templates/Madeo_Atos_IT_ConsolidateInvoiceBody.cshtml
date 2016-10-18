@@ -1889,30 +1889,10 @@ USD&nbsp; 2,400.00
             </tr>
         </tfoot>
     </table>
+   
     <table>
         <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
-                <tr>
-                    <td style="width:638px;">
-                        @row["OrgLeveUserDef01"].ToString()
-                    </td>
-                    <td style="width:2px;">
-                    </td>
-                </tr>
-            }
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="10">
-                </th>
-            </tr>
-        </tfoot>
-    </table>
-    <table>
-        <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
+         
                 <tr>
                     <td style="width:250px;">
                         Net
@@ -1926,13 +1906,13 @@ USD&nbsp; 2,400.00
                 </tr>
                 <tr>
                     <td style="width:250px;">
-                        @row["invoicesubtotal"].ToString()
+                       USD 161,706.51
                     </td>
                     <td style="width:118px;">
-                        @row["CalculatedTaxPercentage"].ToString()
+                        0.00 %
                     </td>
                     <td style="width:135px;">
-                        @row["TotalTax"].ToString()
+                        USD 0.00
                     </td>
                 </tr>
                 <tr>
@@ -1941,10 +1921,10 @@ USD&nbsp; 2,400.00
                     <td style="width:118px;">
                     </td>
                     <td style="width:135px;">
-                        @row["TotalTaxInFunctional"].ToString()
+                        USD 161,706.51
                     </td>
                 </tr>
-            }
+
         </tbody>
         <tfoot>
             <tr>
@@ -1953,57 +1933,5 @@ USD&nbsp; 2,400.00
             </tr>
         </tfoot>
     </table>
-    <table>
-        <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
-                <tr>
-                    <td style="width:165px;font-weight:bold;font-size:12px;">
-                        To Pay
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width:165px;font-weight:regular;">
-                        @row["invoiceTotal"].ToString()
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width:165px;">
-                    </td>
-                </tr>
-            }
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="10">
-                </th>
-            </tr>
-        </tfoot>
-    </table>
-    <table>
-        <tbody>
-            @foreach (DataRow row in Model.BodyDetailsDataSet.Tables[0].Rows)
-            {
-                <tr>
-                    <td style="width:80px;">
-                    </td>
-                    <td style="width:240px;">
-                        @row["ProjUDF6"].ToString()
-                    </td>
-                    <td style="width:90px;">
-                    </td>
-                    <td style="width:114px;">
-                    </td>
-                    <td style="width:115px;">
-                    </td>
-                </tr>
-            }
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="10">
-                </th>
-            </tr>
-        </tfoot>
-    </table>
+  
 </div>
