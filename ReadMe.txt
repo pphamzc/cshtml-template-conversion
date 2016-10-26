@@ -43,5 +43,5 @@ SAS_EMEA_BU_Denmark
 
 NOTE ALSO:
 ---------
-* For the Sample-Invoice-PDF EMEA_BU_Poland.PDF and EMEA_BU_Poland_ENG.PDF, ignore values of last two columns.  Just make sure formatting is correct.
+* For the EMEA_BU_Poland.PDF and EMEA_BU_Poland_ENG.PDF, ignore values of last two columns.  Just make sure formatting is correct.
 
