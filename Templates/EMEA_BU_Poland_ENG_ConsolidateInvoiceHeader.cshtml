@@ -1,0 +1,127 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:10;width:91px;x:270;height:90px;">
+        <img src="@Model.ImagesFolderRootPath/zc_logo.png" alt="logo" />
+    </div>
+
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:46;x:0;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                Invoice
+            </div>
+            <div style="font-family:Times-Roman;padding-bottom:0px;padding-top:0px;font-weight:regular;">
+                Invoice Number:
+                <span>ZCCAUDI000000016</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:60;x:535;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;font-weight:bold;font-size:9px;">Date:</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;font-size:10px;">2015-01-07</td>
+                </tr>
+                <tr>
+                    <td style="width:100px;font-weight:bold;underline;">Seller:</td>
+                </tr>
+                <tr>
+                    <td style="width:140px;">ZeroChaos Sp.z o.o</td>
+                    <td style="color:blue;font-weight:underline;width:200px;">www.zerochaos.com</td>
+                </tr>
+                <tr>
+                    <td style="width:140px;">Ul. Pulawska 2</td>
+                    <td style="color:blue;font-weight:underline;width:200px;">info@zerochaos.pl</td>
+                </tr>
+                <tr>
+                    <td style="width:140px;">02-566 Warszawa</td>
+                </tr>
+                <tr>
+                    <td style="width:140px;">Polska</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Buyer:</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">1</td>
+                    <td style="width:400px;height:80px;">1 Washington Park</td>
+                    <td style="width:400px;height:80px;">16th Floor</td>
+                    <td style="width:400px;height:80px;">07102 Newark, NJ</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Reference Invoice </td>
+                    <td style="width:225px;">Audio Production</td>
+                    <td style="width:130px;">Contact Person:</td>
+                    <td style="width:155px;">Rebecca Shive</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Date:</td>
+                    <td style="width:225px;">2015-01-04</td>
+                    <td style="width:130px;">Payment Terms:</td>
+                    <td style="width:155px;"></td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">PO Number:</td>
+                    <td style="width:225px;"></td>
+                    <td style="width:130px;">Due Date:</td>
+                    <td style="width:155px;">2015-02-07</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Client VAT: </td>
+                    <td style="width:225px;"></td>
+                </tr>
+                <tr>
+                    <td style="width:200px;">Additional Information:</td>
+                    <td style="width:200px;font-weight:bold;"></td>
+                </tr>
+            </table>
+        </div>
+
+</div>
