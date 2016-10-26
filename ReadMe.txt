@@ -35,13 +35,13 @@ NOTE
 
 Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-Madeo_Atos_IT_ConsolidateInvoice
-SAS_EMEA_BU_Denmark_ConsolidateInvoice
-SunocoInvoiceTemplate_Dev_ConsolidateInvoice
-WFL_Standard_Non_Consolidated_ConsolidateInvoice
-Win_HeaderInvoiceTemplate_AND_Win_MultiClientL_ConsolidateInvoice*
+Atos_Germany_IT
+Atos_Netherlands_IT
+EMEA_BU_Poland*
+EMEA_BU_Poland_ENG*
+SAS_EMEA_BU_Denmark
 
 NOTE ALSO:
 ---------
-* For the Sample-Invoice-PDF Win_HeaderInvoiceTemplate_AND_Win_MultiClient.pdf, IGNORE THE SECOND PAGE.
+* For the Sample-Invoice-PDF EMEA_BU_Poland.PDG and EMEA_BU_Poland_ENG.PDF, ignore values of last two columns.  Just make sure formatting is correct.
 
