@@ -1,0 +1,118 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:10;width:100px;x:10;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/ZC_logo.png" alt="logo" />
+    </div>
+  
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:6;x:345;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                Invoice
+            </div>
+            <div style="font-family:TimesNewRoman;padding-bottom:0px;font-size:10px;padding-top:0px;font-weight:regular;">
+                Invoice No
+                <span>ZCCITEL000000010</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:63;x:535;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;">Invoice Date</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;">2015-08-25</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Delivery Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Posti Oy</td>
+                    <td style="width:400px;height:80px;">E: 003701093579</td>
+                    <td style="width:400px;height:80px;">PL 64</td>
+                    <td style="width:400px;height:80px;">00063 LASKUNET, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Invoice Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Posti Oy</td>
+                    <td style="width:400px;height:80px;">E: 003701093579</td>
+                    <td style="width:400px;height:80px;">PL 64</td>
+                    <td style="width:400px;height:80px;">00063 LASKUNET, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Invoice Reference</td>
+                    <td style="width:210px;">Tommi Suojanen</td>
+                    <td style="width:160px;">Our Reference</td>
+                    <td style="width:145px;">Viktor Rännel</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Engagement</td>
+                    <td style="width:210px;">Pukukaapit Posti Lieto</td>
+                    <td style="width:160px;">Terms of Payment</td>
+                    <td style="width:145px;">45 days</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">PO Number</td>
+                    <td style="width:210px;">Toimittaja:THTT Oy</td>
+                    <td style="width:160px;">Date Due</td>
+                    <td style="width:145px;">2015-10-09</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Customer VAT-No</td>
+                    <td style="width:210px;">FI01093579</td>
+                    <td style="width:160px;">Penalty Interest</td>
+                    <td style="width:145px;">9.50 %</td>
+                </tr>
+              
+            </table>
+        </div>
+
+</div>
