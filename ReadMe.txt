@@ -35,13 +35,12 @@ NOTE
 
 Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-Atos_Germany_IT
-Atos_Netherlands_IT
-EMEA_BU_Poland*
-EMEA_BU_Poland_ENG*
-SAS_EMEA_BU_Denmark
+Canada
+EMEA_BU_Sweden
+EMEA_BU_UK
+EMEA_SOW_Invoice_Template_Finland
+India_Invoice
 
 NOTE ALSO:
 ---------
-* For the EMEA_BU_Poland.PDF and EMEA_BU_Poland_ENG.PDF, ignore values of last two columns.  Just make sure formatting is correct.
-
+* For the EMEA_BU_Sweden.PDF ignore the last three pages completely.  
