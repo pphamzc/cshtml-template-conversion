@@ -1,0 +1,117 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:10;width:198px;x:10;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
+    </div>
+
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:6;x:345;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                Invoice
+            </div>
+            <div style="font-family:Times-Roman;padding-bottom:0px;padding-top:0px;font-weight:regular;">
+                Invoice No
+                <span>ZCCMETS000000058</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:63;x:535;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;font-size:9px;">Invoice Date</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;font-size:10px;">2014-02-01</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Delivery Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Metsäliitto Cooperative, Metsä Wood</td>
+                    <td style="width:400px;height:80px;">E: 0037011630046500</td>
+                    <td style="width:400px;height:80px;">Central administration, PO BOX</td>
+                    <td style="width:400px;height:80px;">02020 Metsä, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Invoice Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Metsäliitto Cooperative, Metsä Wood</td>
+                    <td style="width:400px;height:80px;">E: 0037011630046500</td>
+                    <td style="width:400px;height:80px;">Central administration, PO BOX</td>
+                    <td style="width:400px;height:80px;">02020 Metsä, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Checker</td>
+                    <td style="width:182px;">Sanna Peltola</td>
+                    <td style="width:150px;">Our Reference</td>
+                    <td style="width:155px;">Appointed</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">PO Number</td>
+                    <td style="width:182px;">96000228</td>
+                    <td style="width:150px;">Our Order No</td>
+                    <td style="width:155px;"></td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Terms of Delivery</td>
+                    <td style="width:182px;"> </td>
+                    <td style="width:150px;">Terms of Payment</td>
+                    <td style="width:155px;">45 days</td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">Transported by</td>
+                    <td style="width:182px;"> </td>
+                    <td style="width:150px;">Date Due</td>
+                    <td style="width:155px;">2014-03-18</td>
+                </tr>
+            </table>
+        </div>
+
+</div>

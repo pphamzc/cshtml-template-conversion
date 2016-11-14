@@ -1,0 +1,117 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:10;width:198px;x:10;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
+    </div>
+
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:6;x:345;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                Lasku
+            </div>
+            <div style="font-family:Times-Roman;padding-bottom:0px;padding-top:0px;font-weight:regular;">
+                Laskunumero
+                <span>ZCCKONE000000016</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:63;x:535;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;font-size:9px;">Laskutuspvm</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;font-size:10px;">2015-09-30</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Toimitusosoite</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Konecranes Oyj, PL 844</td>
+                    <td style="width:400px;height:80px;">E: 003709427182</td>
+                    <td style="width:400px;height:80px;"></td>
+                    <td style="width:400px;height:80px;">00021 Laskutus, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Laskutusosoite</td>
+                </tr>
+                <tr>
+                       <td style="width:400px;height:80px;">Konecranes Oyj, PL 844</td>
+                    <td style="width:400px;height:80px;">E: 003709427182</td>
+                    <td style="width:400px;height:80px;"></td>
+                    <td style="width:400px;height:80px;">00021 Laskutus, FI</td>
+                </tr>
+                <tr>
+                    <td style="width:130px;">Tarkastaja</td>
+                    <td style="width:206px;">Minna Mikkelä</td>
+                    <td style="width:150px;">Viitteemme</td>
+                    <td style="width:155px;">Rami Peltoniemi</td>
+                </tr>
+                <tr>
+                    <td style="width:130px;">Hyväksyjä</td>
+                    <td style="width:206px;"></td>
+                    <td style="width:150px;">Maksuaika</td>
+                    <td style="width:155px;">60 päivää</td>
+                </tr>
+                <tr>
+                    <td style="width:130px;">Tilausnumero</td>
+                    <td style="width:206px;"></td>
+                    <td style="width:150px;">Eräpäivä</td>
+                    <td style="width:155px;">2015-11-29</td>
+                </tr>
+                <tr>
+                    <td style="width:130px;">Y-tunnus</td>
+                    <td style="width:206px;">FI09427182</td>
+                    <td style="width:150px;">Viivästyskorko</td>
+                    <td style="width:155px;">9.50 %</td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>
