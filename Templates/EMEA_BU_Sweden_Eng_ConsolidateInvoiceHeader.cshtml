@@ -1,0 +1,116 @@
+@inherits Westwind.RazorHosting.RazorTemplateBase
+<style>
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderMainDiv {
+    width: 100%;
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.HeaderMainDiv > div {
+    display: inline-block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.padding-right {
+    padding-right:5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: small;
+    width: 400px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding-left: 3px;
+}
+</style>
+<div>
+    <div style="y:0;width:198px;x:0;height:80px;">
+        <img src="@Model.ImagesFolderRootPath/Madeo_finland.png" alt="logo" />
+    </div>
+   
+        <div style="height:45px;vertical-align:top;height:50px;width:0;y:12;x:315;text-align:left;">
+            <div style="font-family:Times New Roman;padding-bottom:0px;font-size:18px;padding-top:0px;font-weight:bold;">
+                <span>Invoice</span>
+            </div>
+            <div style="font-family:TimesNewRoman;padding-bottom:0px;font-size:10px;padding-top:0px;font-weight:regular;">
+                Invoice No
+                <span>ZCCATOS000001983</span>
+            </div>
+        </div>
+        <div style="vertical-align:middle;height:200px;width:0;y:70;x:500;text-align:left;">
+            <table>
+                <tr>
+                    <td style="width:160px;">Invoice Date</td>
+                </tr>
+                <tr>
+                    <td style="width:160px;">2014-07-01</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Delivery Address</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;height:80px;">Atos IT Solutions AND Services A/S</td>
+                    <td style="width:400px;height:80px;">Atos - BOX 15</td>
+                    <td style="width:400px;height:80px;">ul. Gdanska 47/49</td>
+                    <td style="width:400px;height:80px;">90-729 Lódz, PL</td>
+                </tr>
+                <tr>
+                    <td style="width:400px;">Invoice Address</td>
+                </tr>
+                <tr>
+                      <td style="width:400px;height:80px;">Atos IT Solutions AND Services A/S</td>
+                    <td style="width:400px;height:80px;">Atos - BOX 15</td>
+                    <td style="width:400px;height:80px;">ul. Gdanska 47/49</td>
+                    <td style="width:400px;height:80px;">90-729 Lódz, PL</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Checker</td>
+                    <td style="width:197px;">Atos A/S Accounts Payable</td>
+                    <td style="width:160px;">Our Reference</td>
+                    <td style="width:155px;">Mie Svan Jorgensen</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Your Order Number</td>
+                    <td style="width:197px;">Atos A/S PO</td>
+                    <td style="width:160px;">Terms of Payment</td>
+                    <td style="width:155px;">45 days</td>
+                </tr>
+                <tr>
+                    <td style="width:125px;">Customer VAT-No</td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Date Due</td>
+                    <td style="width:155px;">2014-08-15</td>
+                </tr>
+				  <tr>
+                    <td style="width:125px;"></td>
+                    <td style="width:197px;"></td>
+                    <td style="width:160px;">Penalty Interest</td>
+                    <td style="width:155px;">9.50 %</td>
+                </tr>
+            </table>
+        </div>
+</div>

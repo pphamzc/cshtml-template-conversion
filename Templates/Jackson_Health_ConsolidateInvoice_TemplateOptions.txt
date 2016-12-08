@@ -1,0 +1,1 @@
+[{'HeaderHeight':120,'FooterHeight':null,'PageMargin':{'LeftMargin':50,'TopMargin':10,'RightMargin':10,'BottomMargin':3,'Color':'White'},'IsLandscapeOrientation':true}]
