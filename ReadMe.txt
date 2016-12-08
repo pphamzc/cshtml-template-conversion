@@ -35,9 +35,9 @@ NOTE
 
 Standard_US_Alt_ConsolidateInvoice is the sample template that has been completed.  You will use this as a guide on how to update the following templates for this challenge : 
 
-EMEA_BU_Denmark
-EMEA_BU_Finland
-EMEA_BU_Finland_Finnish
+EMEA_BU_Sweden_Eng
+EMEA_BU_Sweden_ISD
+EMEA_BU_Sweden_WithSpend
 EMEA_BU_Norway
-EMEA_BU_Norway_EUR
+Jackson_Health
 
