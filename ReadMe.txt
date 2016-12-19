@@ -38,6 +38,5 @@ Standard_US_Alt_ConsolidateInvoice is the sample template that has been complete
 EMEA_BU_Sweden_Eng
 EMEA_BU_Sweden_ISD
 EMEA_BU_Sweden_WithSpend
-EMEA_BU_Norway
 Jackson_Health
 
